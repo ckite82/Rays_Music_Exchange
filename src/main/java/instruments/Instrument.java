@@ -23,4 +23,8 @@ public abstract class Instrument {
     public String getModel() {
         return this.model;
     }
+
+    public boolean getSaleStatus() {
+        return this.saleItem;
+    }
 }

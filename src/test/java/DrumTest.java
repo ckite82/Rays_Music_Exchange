@@ -1,5 +1,6 @@
 import instruments.Drum;
 import org.junit.Before;
+import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
@@ -16,15 +17,18 @@ public class DrumTest {
         snare = new Drum("Ludwig", "Something", false, 200, 300);
     }
 
-    @Before
+    @Test
     public void canGetMake() {
         assertEquals("Premier", tomTom.getManufacturer());
     }
 
-    @Before
+    @Test
     public void canGetModel() {
          assertEquals("Something", bass.getModel());
     }
 
-
+    @Test
+    public void canCheckSaleItem__false() {
+        assertEquals(false, tomTom.getSaleStatus());
+    }
 }
