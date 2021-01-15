@@ -27,4 +27,9 @@ public abstract class Instrument {
     public boolean getSaleStatus() {
         return this.saleItem;
     }
+
+    public double getCostPrice() {
+        return this.costPrice;
+    }
+
 }
