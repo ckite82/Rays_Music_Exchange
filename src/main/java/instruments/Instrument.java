@@ -15,4 +15,24 @@ public abstract class Instrument {
         this.sellingPrice = sellingPrice;
         this.buyingPrice = buyingPrice;
     }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getMaterial() {
+        return material;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public double getSellingPrice() {
+        return sellingPrice;
+    }
+
+    public double getBuyingPrice() {
+        return buyingPrice;
+    }
 }
