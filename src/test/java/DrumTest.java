@@ -41,4 +41,9 @@ public class DrumTest {
     public void canGetcostPrice() {
         assertEquals(100.50, tomTom.getCostPrice(), 0.01);
     }
+
+    @Test
+    public void canGetRetailPrice() {
+        assertEquals(199.99, tomTom.getRetailPrice(), 0.01);
+    }
 }

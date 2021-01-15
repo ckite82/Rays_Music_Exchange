@@ -32,4 +32,7 @@ public abstract class Instrument {
         return this.costPrice;
     }
 
+    public double getRetailPrice() {
+        return this.retailPrice;
+    }
 }
