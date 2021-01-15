@@ -25,4 +25,6 @@ public class DrumTest {
     public void canGetModel() {
          assertEquals("Something", bass.getModel());
     }
+
+
 }
