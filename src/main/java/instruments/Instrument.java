@@ -16,4 +16,11 @@ public abstract class Instrument {
         this.retailPrice = retailPrice;
     }
 
+    public String getManufacturer() {
+        return this.make;
+    }
+
+    public String getModel() {
+        return this.model;
+    }
 }
