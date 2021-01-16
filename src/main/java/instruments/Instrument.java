@@ -2,18 +2,24 @@ package instruments;
 
 public abstract class Instrument {
 
+    private int itemNumber;
     private String make;
     private String model;
     private boolean saleItem;
     private double costPrice;
     private double retailPrice;
 
-    public Instrument(String make, String model, boolean saleItem, double costPrice, double retailPrice){
+    public Instrument(int itemNumber, String make, String model, boolean saleItem, double costPrice, double retailPrice){
+        this.itemNumber = itemNumber;
         this.make = make;
         this.model = model;
         this.saleItem = saleItem;
         this.costPrice = costPrice;
         this.retailPrice = retailPrice;
+    }
+
+    public int getItemNumber() {
+        return itemNumber;
     }
 
     public String getManufacturer() {
@@ -35,4 +41,6 @@ public abstract class Instrument {
     public double getRetailPrice() {
         return this.retailPrice;
     }
+
+
 }
