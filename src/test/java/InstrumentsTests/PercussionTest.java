@@ -57,6 +57,6 @@ public class PercussionTest {
 
     @Test
     public void canPlaySound() {
-        assertEquals("Rat-A-Tat-Tat", tomTom.play("Rat-A-Tat-Tat"));
+        assertEquals("I am a percussion instrument and I can Rat-A-Tat-Tat", tomTom.play("Rat-A-Tat-Tat"));
     }
 }

@@ -22,6 +22,6 @@ public class Stringed extends Instrument implements IPlay {
     }
 
     public String play(String playInstrument){
-        return playInstrument;
+        return "I am a stringed instrument and I can " + playInstrument;
     }
 }

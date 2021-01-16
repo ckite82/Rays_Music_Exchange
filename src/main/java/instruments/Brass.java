@@ -22,7 +22,6 @@ public class Brass extends Instrument implements IPlay {
     }
 
     public String play(String playInstrument){
-        return playInstrument;
-        }
-
+        return "I am a brass instrument and I can " + playInstrument;
+    }
 }

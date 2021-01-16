@@ -28,6 +28,6 @@ public class StringedTest {
 
     @Test
     public void canPlaySound() {
-        assertEquals("Strum Strum!", electricGuitar.play("Strum Strum!"));
+        assertEquals("I am a stringed instrument and I can Strum Strum!", electricGuitar.play("Strum Strum!"));
     }
 }

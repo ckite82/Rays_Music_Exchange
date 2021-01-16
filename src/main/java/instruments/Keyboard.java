@@ -23,6 +23,6 @@ public class Keyboard extends Instrument implements IPlay {
     }
 
     public String play(String playInstrument){
-        return playInstrument;
+        return "I am a keyboard instrument and I can " + playInstrument;
     }
 }
