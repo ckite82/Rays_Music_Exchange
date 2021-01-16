@@ -25,4 +25,8 @@ public class Keyboard extends Instrument implements IPlay {
     public String play(String playInstrument){
         return "I am a keyboard instrument and I can " + playInstrument;
     }
+
+    public double calculateMarkup(double retailPrice, double costPrice){
+        return this.retailPrice - this.costPrice;
+    }
 }

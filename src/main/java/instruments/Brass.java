@@ -24,4 +24,8 @@ public class Brass extends Instrument implements IPlay {
     public String play(String playInstrument){
         return "I am a brass instrument and I can " + playInstrument;
     }
+
+    public double calculateMarkup(double retailPrice, double costPrice){
+        return this.retailPrice - this.costPrice;
+    }
 }

@@ -62,4 +62,9 @@ public class BrassTest {
     public void canPlaySound() {
         assertEquals("I am a brass instrument and I can Toot toot!", brass.play("Toot toot!"));
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(49.99, brass.calculateMarkup(169.99, 120.00),0.01);
+    }
 }

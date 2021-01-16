@@ -14,7 +14,7 @@ public class KeyboardTest {
 
     @Before
     public void setUp() {
-        grandPiano = new Keyboard(100050, "Premier", "Pro Beat", false, 100.50, 199.99, 77, "Grand");
+        grandPiano = new Keyboard(100050, "Premier", "Pro Beat", false, 1500, 2000, 77, "Grand");
     }
 
     @Test
@@ -30,6 +30,11 @@ public class KeyboardTest {
     @Test
     public void canPlaySound() {
         assertEquals("I am a keyboard instrument and I can Ting-A-Ling-A-Ling",grandPiano.play("Ting-A-Ling-A-Ling"));
+    }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(500, grandPiano.calculateMarkup(2000.00, 1500.00),0.01);
     }
 }
 

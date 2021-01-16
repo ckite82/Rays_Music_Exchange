@@ -13,7 +13,7 @@ public class StringedTest {
 
     @Before
     public void setUp() {
-        electricGuitar = new Stringed(100050, "Fender", "Stratocaster", false, 100.50,199.99, 6, "Electric");
+        electricGuitar = new Stringed(100050, "Fender", "Stratocaster", false, 329,450.49, 6, "Electric");
     }
 
     @Test
@@ -29,5 +29,10 @@ public class StringedTest {
     @Test
     public void canPlaySound() {
         assertEquals("I am a stringed instrument and I can Strum Strum!", electricGuitar.play("Strum Strum!"));
+    }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(121.49, electricGuitar.calculateMarkup(450.49, 329.00),0.01);
     }
 }
