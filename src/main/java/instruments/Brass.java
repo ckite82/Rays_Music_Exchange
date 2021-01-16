@@ -1,6 +1,8 @@
 package instruments;
 
-public class Brass extends Instrument{
+import behaviours.IPlay;
+
+public class Brass extends Instrument implements IPlay {
 
     private int numberOfValves;
     private String mouthPieceSize;
@@ -18,4 +20,9 @@ public class Brass extends Instrument{
     public String getMouthPieceSize() {
         return mouthPieceSize;
     }
+
+    public String play(String playInstrument){
+        return playInstrument;
+        }
+
 }

@@ -9,49 +9,57 @@ import static org.junit.Assert.assertEquals;
 public class BrassTest {
 
     Brass brass;
+    Brass trumpet;
 
     @Before
-    public void setUp(){
-        brass = new Brass (500050, "John Packer", "JP051", false, 120.00,169.99, 3, "JP601");
+    public void setUp() {
+        brass = new Brass(500050, "John Packer", "JP051", false, 120.00, 169.99, 3, "JP601");
+
+
     }
 
     @Test
-    public void canGetItemNumber(){
+    public void canGetItemNumber() {
         assertEquals(500050, brass.getItemNumber());
     }
 
     @Test
-    public void canGetMake(){
+    public void canGetMake() {
         assertEquals("John Packer", brass.getManufacturer());
     }
 
     @Test
-    public void canGetModel(){
+    public void canGetModel() {
         assertEquals("JP051", brass.getModel());
     }
 
     @Test
-    public void canCheckSaleItem__false(){
+    public void canCheckSaleItem__false() {
         assertEquals(false, brass.getSaleStatus());
     }
 
     @Test
-    public void canGetCostPrice(){
+    public void canGetCostPrice() {
         assertEquals(120.0, brass.getCostPrice(), 0.01);
     }
 
     @Test
-    public void canGetRetailPrice(){
+    public void canGetRetailPrice() {
         assertEquals(169.99, brass.getRetailPrice(), 0.01);
     }
 
     @Test
-    public void canGetNumberOfValves(){
+    public void canGetNumberOfValves() {
         assertEquals(3, brass.getNumberOfValves());
     }
 
     @Test
-    public void canGetMouthPieceSize(){
+    public void canGetMouthPieceSize() {
         assertEquals("JP601", brass.getMouthPieceSize());
+    }
+
+    @Test
+    public void canPlaySound() {
+        assertEquals("Toot Toot!", brass.play("Toot Toot!"));
     }
 }

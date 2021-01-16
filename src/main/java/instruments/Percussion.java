@@ -1,6 +1,8 @@
 package instruments;
 
-public class Percussion extends Instrument{
+import behaviours.IPlay;
+
+public class Percussion extends Instrument implements IPlay {
 
     private int drumSizeInches;
     private String drumType;
@@ -17,5 +19,9 @@ public class Percussion extends Instrument{
 
     public String getDrumType() {
         return drumType;
+    }
+
+    public String play(String playInstrument){
+        return playInstrument;
     }
 }

@@ -1,6 +1,8 @@
 package instruments;
 
-public class Stringed extends Instrument{
+import behaviours.IPlay;
+
+public class Stringed extends Instrument implements IPlay {
 
     private int numberOfStrings;
     private String guitarType;
@@ -17,5 +19,9 @@ public class Stringed extends Instrument{
 
     public String getGuitarType() {
         return this.guitarType;
+    }
+
+    public String play(String playInstrument){
+        return playInstrument;
     }
 }

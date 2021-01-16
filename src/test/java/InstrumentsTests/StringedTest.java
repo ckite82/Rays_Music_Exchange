@@ -9,6 +9,7 @@ import static org.junit.Assert.assertEquals;
 public class StringedTest {
 
     Stringed electricGuitar;
+    Stringed guitar;
 
     @Before
     public void setUp() {
@@ -23,5 +24,10 @@ public class StringedTest {
     @Test
     public void canGetGuitarType() {
         assertEquals("Electric", electricGuitar.getGuitarType());
+    }
+
+    @Test
+    public void canPlaySound() {
+        assertEquals("Strum Strum!", electricGuitar.play("Strum Strum!"));
     }
 }

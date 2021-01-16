@@ -10,6 +10,7 @@ import static org.junit.Assert.assertEquals;
 public class KeyboardTest {
 
     Keyboard grandPiano;
+    Keyboard keyboard;
 
     @Before
     public void setUp() {
@@ -26,6 +27,10 @@ public class KeyboardTest {
         assertEquals("Grand", grandPiano.getPianoType());
     }
 
+    @Test
+    public void canPlaySound() {
+        assertEquals("Ting-A-Ling-A-Ling",grandPiano.play("Ting-A-Ling-A-Ling"));
+    }
 }
 
 

@@ -8,11 +8,10 @@ import static org.junit.Assert.assertEquals;
 
 public class PercussionTest {
 
+    Percussion percussion;
     Percussion tomTom;
     Percussion bass;
     Percussion snare;
-
-    private int drumSize = 18;
 
     @Before
     public void setUp(){
@@ -54,5 +53,10 @@ public class PercussionTest {
     @Test
     public void canGetRetailPrice() {
         assertEquals(199.99, tomTom.getRetailPrice(), 0.01);
+    }
+
+    @Test
+    public void canPlaySound() {
+        assertEquals("Rat-A-Tat-Tat", tomTom.play("Rat-A-Tat-Tat"));
     }
 }
