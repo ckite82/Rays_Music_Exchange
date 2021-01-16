@@ -1,22 +1,22 @@
-import instruments.Drum;
+import instruments.Percussion;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class DrumTest {
+public class PercussionTest {
 
-    Drum tomTom;
-    Drum bass;
-    Drum snare;
+    Percussion tomTom;
+    Percussion bass;
+    Percussion snare;
 
     private int drumSize = 18;
 
     @Before
     public void setUp(){
-        tomTom = new Drum(100050, "Premier", "Pro Beat", false, 100.50,199.99);
-        bass = new Drum(100060, "British Drum Co.","Legend Series", true, 100, 200);
-        snare = new Drum(100070, "Ludwig", "SQ1 Series", false, 200, 300);
+        tomTom = new Percussion(100050, "Premier", "Pro Beat", false, 100.50,199.99);
+        bass = new Percussion(100060, "British Drum Co.","Legend Series", true, 100, 200);
+        snare = new Percussion(100070, "Ludwig", "SQ1 Series", false, 200, 300);
     }
 
     @Test
