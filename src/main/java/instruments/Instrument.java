@@ -6,8 +6,8 @@ public abstract class Instrument {
     private String make;
     private String model;
     private boolean saleItem;
-    private double costPrice;
-    private double retailPrice;
+    public double costPrice;
+    public double retailPrice;
 
     public Instrument(int itemNumber, String make, String model, boolean saleItem, double costPrice, double retailPrice){
         this.itemNumber = itemNumber;

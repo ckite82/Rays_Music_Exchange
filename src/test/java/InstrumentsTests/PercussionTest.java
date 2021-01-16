@@ -59,4 +59,9 @@ public class PercussionTest {
     public void canPlaySound() {
         assertEquals("I am a percussion instrument and I can Rat-A-Tat-Tat", tomTom.play("Rat-A-Tat-Tat"));
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(99.49, tomTom.calculateMarkup(199.99, 100.50),0.01);
+    }
 }

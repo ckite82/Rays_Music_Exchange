@@ -22,7 +22,11 @@ public class Percussion extends Instrument implements IPlay {
     }
 
     public String play(String playInstrument){
-        System.out.println(playInstrument);
         return "I am a percussion instrument and I can " + playInstrument;
+    }
+
+    public double calculateMarkup(double retailPrice, double costPrice){
+        return this.retailPrice - this.costPrice;
+
     }
 }
