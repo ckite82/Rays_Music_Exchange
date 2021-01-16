@@ -14,9 +14,9 @@ public class DrumTest {
 
     @Before
     public void setUp(){
-        tomTom = new Drum(100050, "Premier", "something", false, 100.50,199.99);
-        bass = new Drum(100060, "Tama","Something", true, 100, 200);
-        snare = new Drum(100070, "Ludwig", "Something", false, 200, 300);
+        tomTom = new Drum(100050, "Premier", "Pro Beat", false, 100.50,199.99);
+        bass = new Drum(100060, "British Drum Co.","Legend Series", true, 100, 200);
+        snare = new Drum(100070, "Ludwig", "SQ1 Series", false, 200, 300);
     }
 
     @Test
@@ -31,7 +31,7 @@ public class DrumTest {
 
     @Test
     public void canGetModel() {
-         assertEquals("Something", bass.getModel());
+         assertEquals("Legend Series", bass.getModel());
     }
 
     @Test
