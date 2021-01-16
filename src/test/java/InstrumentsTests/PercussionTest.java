@@ -47,7 +47,7 @@ public class PercussionTest {
     }
 
     @Test
-    public void canGetcostPrice() {
+    public void canGetCostPrice() {
         assertEquals(100.50, tomTom.getCostPrice(), 0.01);
     }
 

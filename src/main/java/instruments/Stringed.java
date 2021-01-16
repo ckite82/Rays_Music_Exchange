@@ -10,4 +10,12 @@ public class Stringed extends Instrument{
         this.numberOfStrings = numberOfStrings;
         this.guitarType = guitarType;
     }
+
+    public int getStringQty() {
+        return this.numberOfStrings;
+    }
+
+    public String getGuitarType() {
+        return this.guitarType;
+    }
 }
