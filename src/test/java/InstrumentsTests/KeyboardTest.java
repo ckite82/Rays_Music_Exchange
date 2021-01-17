@@ -38,10 +38,7 @@ public class KeyboardTest {
         assertEquals("Dun-dun-dun-dun", grandPiano.getSoundMade());
     }
 
-    @Test
-    public void canCalculateMarkup(){
-        assertEquals(500, grandPiano.calculateMarkup(2000.00, 1500.00),0.01);
-    }
+
 }
 
 

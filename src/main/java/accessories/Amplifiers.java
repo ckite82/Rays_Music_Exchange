@@ -11,6 +11,4 @@ public class Amplifiers extends Accessory implements ISell {
     public void calculateMarkup(double sellingPrice, double buyingPrice){
         this.markUp = sellingPrice - buyingPrice;
     }
-
-
 }

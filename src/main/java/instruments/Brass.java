@@ -1,8 +1,9 @@
 package instruments;
 
 import behaviours.IPlay;
+import behaviours.ISell;
 
-public class Brass extends Instrument implements IPlay {
+public class Brass extends Instrument implements IPlay, ISell {
 
     private int numberOfValves;
     private String mouthPieceSize;
@@ -25,7 +26,7 @@ public class Brass extends Instrument implements IPlay {
         this.soundMade = sound;
     }
 
-    public double calculateMarkup(double retailPrice, double costPrice){
-        return this.retailPrice - this.costPrice;
+    public void calculateMarkup(double retailPrice, double costPrice) {
+        this.markUp = retailPrice - costPrice;
     }
 }

@@ -37,8 +37,5 @@ public class StringedTest {
         assertEquals("Wa-wa-wa-wa-wa", electricGuitar.getSoundMade());
     }
 
-    @Test
-    public void canCalculateMarkup(){
-        assertEquals(121.49, electricGuitar.calculateMarkup(450.49, 329.00),0.01);
-    }
+
 }

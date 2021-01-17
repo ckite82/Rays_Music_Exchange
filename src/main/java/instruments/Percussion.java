@@ -26,7 +26,7 @@ public class Percussion extends Instrument implements IPlay, ISell {
         this.soundMade = sound;
     }
 
-    public void calculateMarkup(double retailPrice, double costPrice){
+    public void calculateMarkup(double retailPrice, double costPrice) {
         this.markUp = retailPrice - costPrice;
     }
 }

@@ -70,7 +70,8 @@ public class BrassTest {
     }
 
     @Test
-    public void canCalculateMarkup(){
-        assertEquals(49.99, brass.calculateMarkup(169.99, 120.00),0.01);
+    public void canCalculateMarkup() {
+        brass.calculateMarkup(169.99, 120.00);
+        assertEquals(49.99, brass.getProfitMade(),0.01);
     }
 }
