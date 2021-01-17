@@ -33,6 +33,18 @@ public class Shop {
         return this.stock.size();
     }
 
+    public Instrument getInstrument() {
+        return instrument;
+    }
+
+    public Accessory getAccessory() {
+        return accessory;
+    }
+
+    public void addItem(ISell instrument) {
+        this.stock.add(instrument);
+    }
+
 
 //
 //    public double getTill() {
