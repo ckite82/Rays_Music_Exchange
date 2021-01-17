@@ -1,6 +1,8 @@
 package accessories;
 
-public abstract class Accessory {
+import behaviours.ISell;
+
+public abstract class Accessory implements ISell {
 
     protected double markUp;
 

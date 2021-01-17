@@ -41,41 +41,11 @@ public class Shop {
         return accessory;
     }
 
-    public void addItem(ISell instrument) {
-        this.stock.add(instrument);
+    public void addItem(ISell item) {
+        this.stock.add(item);
     }
 
-
-//
-//    public double getTill() {
-//        return till;
-//    }
-//
-//    public ArrayList<ISell> getStock() {
-//        return stock;
-//    }
-//
-//    public Instrument getInstrument() {
-//        return instrument;
-//    }
-//
-//    public Accessory getAccessory() {
-//        return accessory;
-//    }
-//
-//    public void addInstrument(Instrument instrument) {
-//        this.stock.add(instrument);
-//    }
-//
-//    public void addAccessory(Accessory accessory) {
-//        this.stock.add(accessory);
-//    }
-//
-//    public void removeInstrument(Instrument instrument) {
-//        this.stock.remove(instrument);
-//    }
-//
-//    public void removeAccessory(Accessory accessory){
-//        this.stock.remove(accessory);
-//    }
+    public void removeItem(ISell item) {
+        this.stock.remove(item);
+    }
 }

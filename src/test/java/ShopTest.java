@@ -1,4 +1,5 @@
 import accessories.Accessory;
+import accessories.DrumSticks;
 import instruments.Instrument;
 import instruments.Percussion;
 import org.junit.Before;
@@ -15,14 +16,14 @@ public class ShopTest {
     private Instrument instrument2;
     private Instrument instrument3;
     private Accessory accessory;
-    private Accessory accessory1;
+    private DrumSticks drumSticks;
     private Accessory accessory2;
     private Accessory accessory3;
-
     @Before
     public void setUp(){
         shop = new Shop("Rays Music Exchange", 2000.00, instrument, accessory);
         snare = new Percussion(100070, "Ludwig", "SQ1 Series", false, 200, 300, 20, "Snare");
+        drumSticks = new DrumSticks("Premier", 5, 10);
     }
 
     @Test
@@ -53,6 +54,27 @@ public class ShopTest {
     @Test
     public void canAddInstrumentToStock(){
         shop.addItem(snare);
+        assertEquals(1, shop.getStock());
+    }
+
+    @Test
+    public void canAddAccessoryToStock(){
+        shop.addItem(drumSticks);
+        assertEquals(1, shop.getStock());
+    }
+
+    @Test
+    public void canAddAllToStock(){
+        shop.addItem(snare);
+        shop.addItem(drumSticks);
+        assertEquals(2, shop.getStock());
+    }
+
+    @Test
+    public void canRemoveFromStock(){
+        shop.addItem(snare);
+        shop.addItem(drumSticks);
+        shop.removeItem(snare);
         assertEquals(1, shop.getStock());
     }
 
