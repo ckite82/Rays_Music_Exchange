@@ -28,6 +28,11 @@ public class KeyboardTest {
     }
 
     @Test
+    public void hasMadeNoSoundToStart() {
+        assertEquals("", grandPiano.getSoundMade());
+    }
+
+    @Test
     public void canPlaySound() {
         grandPiano.playInstrument("Dun-dun-dun-dun");
         assertEquals("Dun-dun-dun-dun", grandPiano.getSoundMade());

@@ -56,6 +56,11 @@ public class PercussionTest {
     }
 
     @Test
+    public void hasMadeNoSoundToStart() {
+        assertEquals("", snare.getSoundMade());
+    }
+
+    @Test
     public void canPlaySound() {
         snare.playInstrument("Rat-a-tat-tat");
         assertEquals("Rat-a-tat-tat", snare.getSoundMade());
