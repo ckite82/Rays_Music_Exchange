@@ -14,9 +14,9 @@ public class PercussionTest {
     Percussion snare;
 
     @Before
-    public void setUp(){
-        tomTom = new Percussion(100050, "Premier", "Pro Beat", false, 100.50,199.99, 18, "Tomtom");
-        bass = new Percussion(100060, "British Drum Co.","Legend Series", true, 100, 200, 30, "Bass Drum");
+    public void setUp() {
+        tomTom = new Percussion(100050, "Premier", "Pro Beat", false, 100.50, 199.99, 18, "Tomtom");
+        bass = new Percussion(100060, "British Drum Co.", "Legend Series", true, 100, 200, 30, "Bass Drum");
         snare = new Percussion(100070, "Ludwig", "SQ1 Series", false, 200, 300, 20, "Snare");
     }
 
@@ -32,7 +32,7 @@ public class PercussionTest {
 
     @Test
     public void canGetModel() {
-         assertEquals("Legend Series", bass.getModel());
+        assertEquals("Legend Series", bass.getModel());
     }
 
     @Test
@@ -67,9 +67,8 @@ public class PercussionTest {
     }
 
     @Test
-    public void canCalculateMarkup(){
-        assertEquals(99.49, tomTom.calculateMarkup(199.99, 100.50),0.01);
+    public void canCalculateMarkup() {
+        snare.calculateMarkup(300, 200);
+        assertEquals(100.00, snare.getProfitMade(),0.01);
     }
-
-
 }

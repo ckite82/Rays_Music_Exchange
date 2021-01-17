@@ -1,10 +1,9 @@
 package instruments;
 
-
-
 public abstract class Instrument {
 
     protected String soundMade;
+    protected double markUp;
 
     private int itemNumber;
     private String make;
@@ -21,6 +20,7 @@ public abstract class Instrument {
         this.costPrice = costPrice;
         this.retailPrice = retailPrice;
         this.soundMade = "";
+        this.markUp = 0.0;
     }
 
     public int getItemNumber() {
@@ -51,5 +51,8 @@ public abstract class Instrument {
         return soundMade;
     }
 
+    public double getProfitMade() {
+        return markUp;
+    }
 
 }
