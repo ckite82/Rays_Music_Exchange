@@ -29,7 +29,8 @@ public class KeyboardTest {
 
     @Test
     public void canPlaySound() {
-        assertEquals("I am a keyboard instrument and I can Ting-A-Ling-A-Ling",grandPiano.play("Ting-A-Ling-A-Ling"));
+        grandPiano.playInstrument("Dun-dun-dun-dun");
+        assertEquals("Dun-dun-dun-dun", grandPiano.getSoundMade());
     }
 
     @Test

@@ -21,8 +21,8 @@ public class Stringed extends Instrument implements IPlay {
         return this.guitarType;
     }
 
-    public String play(String playInstrument){
-        return "I am a stringed instrument and I can " + playInstrument;
+    public void playInstrument(String sound) {
+        this.soundMade = sound;
     }
 
     public double calculateMarkup(double retailPrice, double costPrice){

@@ -60,7 +60,8 @@ public class BrassTest {
 
     @Test
     public void canPlaySound() {
-        assertEquals("I am a brass instrument and I can Toot toot!", brass.play("Toot toot!"));
+        brass.playInstrument("Toot-toot-toot");
+        assertEquals("Toot-toot-toot", brass.getSoundMade());
     }
 
     @Test

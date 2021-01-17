@@ -21,8 +21,8 @@ public class Percussion extends Instrument implements IPlay {
         return drumType;
     }
 
-    public String play(String playInstrument){
-        return "I am a percussion instrument and I can " + playInstrument;
+    public void playInstrument(String sound) {
+        this.soundMade = sound;
     }
 
     public double calculateMarkup(double retailPrice, double costPrice){
