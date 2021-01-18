@@ -4,8 +4,9 @@ import instruments.Instrument;
 
 import java.util.ArrayList;
 
-public class Shop {
+public class Shop implements ISell {
 
+    public double markUp;
     private String name;
     private double till;
     private ArrayList<ISell> stock;
@@ -19,6 +20,7 @@ public class Shop {
         this.stock = new ArrayList<ISell>();
         this.instrument = instrument;
         this.accessory = accessory;
+        this.markUp = 0.0;
     }
 
     public String getName() {
@@ -47,5 +49,26 @@ public class Shop {
 
     public void removeItem(ISell item) {
         this.stock.remove(item);
+    }
+
+//    public void calculateMarkup(double retailPrice, double costPrice) {
+//        this.markUp = retailPrice - costPrice;
+//    }
+
+    private void calculateMarkup(ISell item) {
+    }
+
+    public double getProfit() {
+        double total = 0;
+        for (ISell item : this.stock) {
+            calculateMarkup(item);
+            total += markUp;
+        }
+        return total;
+    }
+
+    @Override
+    public void calculateMarkup(double sellingPrice, double buyingPrice) {
+
     }
 }
